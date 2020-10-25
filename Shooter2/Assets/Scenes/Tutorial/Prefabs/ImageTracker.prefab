@@ -1,0 +1,378 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8124781448013765431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8124781448013765424}
+  - component: {fileID: 8124781448013765425}
+  m_Layer: 0
+  m_Name: Init_posicion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8124781448013765424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124781448013765431}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8124781449502539619}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8124781448013765425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124781448013765431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1550001261, guid: 74f59eb22abf947599d3aecf24b954b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetPattern: safZone
+  _drawable: {fileID: 6694424087187263103, guid: e79fdb60d30f5b842aef50deaf486154,
+    type: 3}
+  _autoToggleVisibility: 1
+  _extendedTracking: 0
+  _targetsForExtendedTracking: []
+  OnImageRecognized:
+    m_PersistentCalls:
+      m_Calls: []
+  OnImageLost:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &8124781448646292666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8124781448646292667}
+  - component: {fileID: 8124781448646292660}
+  m_Layer: 0
+  m_Name: Diana
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8124781448646292667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124781448646292666}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8124781449502539619}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8124781448646292660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124781448646292666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1550001261, guid: 74f59eb22abf947599d3aecf24b954b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetPattern: target
+  _drawable: {fileID: 6694424087187263103, guid: e79fdb60d30f5b842aef50deaf486154,
+    type: 3}
+  _autoToggleVisibility: 1
+  _extendedTracking: 0
+  _targetsForExtendedTracking: []
+  OnImageRecognized:
+    m_PersistentCalls:
+      m_Calls: []
+  OnImageLost:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &8124781449146885877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8124781449146885878}
+  - component: {fileID: 8124781449146885879}
+  m_Layer: 0
+  m_Name: Enemigo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8124781449146885878
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124781449146885877}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8124781449502539619}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8124781449146885879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124781449146885877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1550001261, guid: 74f59eb22abf947599d3aecf24b954b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetPattern: enemy
+  _drawable: {fileID: 6694424087187263103, guid: e79fdb60d30f5b842aef50deaf486154,
+    type: 3}
+  _autoToggleVisibility: 1
+  _extendedTracking: 0
+  _targetsForExtendedTracking: []
+  OnImageRecognized:
+    m_PersistentCalls:
+      m_Calls: []
+  OnImageLost:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &8124781449466052567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8124781449466052560}
+  - component: {fileID: 8124781449466052561}
+  m_Layer: 0
+  m_Name: Lasers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8124781449466052560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124781449466052567}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8124781449502539619}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8124781449466052561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124781449466052567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1550001261, guid: 74f59eb22abf947599d3aecf24b954b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetPattern: laserMod
+  _drawable: {fileID: 6694424087187263103, guid: e79fdb60d30f5b842aef50deaf486154,
+    type: 3}
+  _autoToggleVisibility: 1
+  _extendedTracking: 0
+  _targetsForExtendedTracking: []
+  OnImageRecognized:
+    m_PersistentCalls:
+      m_Calls: []
+  OnImageLost:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &8124781449502869777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8124781449502572581}
+  - component: {fileID: 8166160572347907523}
+  m_Layer: 0
+  m_Name: Muros
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8124781449502572581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124781449502869777}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8124781449502539619}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8166160572347907523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124781449502869777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1550001261, guid: 74f59eb22abf947599d3aecf24b954b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetPattern: tower
+  _drawable: {fileID: 0}
+  _autoToggleVisibility: 1
+  _extendedTracking: 0
+  _targetsForExtendedTracking: []
+  OnImageRecognized:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: OnImageRecognized
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnImageLost:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &8124781449502962819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8124781449502539619}
+  - component: {fileID: 8124781449512556099}
+  m_Layer: 0
+  m_Name: ImageTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8124781449502539619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124781449502962819}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8124781449502572581}
+  - {fileID: 8124781449146885878}
+  - {fileID: 8124781449466052560}
+  - {fileID: 8124781448013765424}
+  - {fileID: 8124781448646292667}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8124781449512556099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124781449502962819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 822067672, guid: 74f59eb22abf947599d3aecf24b954b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTargetsLoaded:
+    m_PersistentCalls:
+      m_Calls: []
+  OnErrorLoadingTargets:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExtendedTrackingQualityChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  _targetSourceType: 0
+  _targetCollectionResource:
+    _targetPath: Wikitude/marcadoresFinales.wtc
+    _useCustomURL: 0
+    OnFinishLoading:
+      m_PersistentCalls:
+        m_Calls: []
+    OnErrorLoading:
+      m_PersistentCalls:
+        m_Calls: []
+  _cloudRecognitionService:
+    _clientToken: 
+    _groupId: 
+    _targetCollectionId: 
+    _serverRegion: 0
+    _customServerURL: 
+    OnInitialized:
+      m_PersistentCalls:
+        m_Calls: []
+    OnInitializationError:
+      m_PersistentCalls:
+        m_Calls: []
+    OnRecognitionResponse:
+      m_PersistentCalls:
+        m_Calls: []
+    OnRecognitionError:
+      m_PersistentCalls:
+        m_Calls: []
+    OnInterruption:
+      m_PersistentCalls:
+        m_Calls: []
+  _maximumNumberOfConcurrentTrackableTargets: 5
+  _rangeExtension: 2
+  _trackerEfficiencyMode: 0
