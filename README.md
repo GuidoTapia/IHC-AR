@@ -11,12 +11,12 @@
 1. Tener smartphone con cámara integrada
 2. Instalar .apk y dar acceso a la cámara
 
-# 2. Pasos para compilación de proyecto
+# 3. Pasos para compilación de proyecto
 1. Clonar el repositorio a una carpeta local
 2. Utilizar Unity Hub para abrir la carpeta del proyecto.
 3. Ejecutar desde la escena 0 (Menú)
 
-# 2. Video explicativo de los resultados
+# 4. Video explicativo de los resultados
 
 Enlace a Youtube:
 https://www.youtube.com/watch?v=wHyZbtKdMDk
