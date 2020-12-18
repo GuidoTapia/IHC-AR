@@ -7,7 +7,10 @@ public class LaserPlayer : MonoBehaviour {
 public GameObject diana;
 private float inicioDisparar;
 
+
  void Start () {
+     
+
  }
  
  // Update is called once per frame
@@ -23,7 +26,9 @@ private float inicioDisparar;
             if (hit. collider)
             {   if(Time.time > inicioDisparar ){
                     inicioDisparar = Time.time + tiempoDisparo;
-                    Instantiate(diana, hit.point, Quaternion.identity);     
+                    Instantiate(diana, hit.point, Quaternion.identity);
+                    
+                   
                 }          
             }
         }

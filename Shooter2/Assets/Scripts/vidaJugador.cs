@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class vidaJugador : MonoBehaviour
 {
-    public float vida = 100;
+    // public float vida = 100;
     public Image barraDeVida;
     public Image pantallaRoja;
     public GameObject gameOverText;
@@ -28,10 +28,11 @@ public class vidaJugador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        vida = Mathf.Clamp(vida,0,100);
-        barraDeVida.fillAmount = vida / 100;
+        VariablesConfig.vidaJugador = Mathf.Clamp(VariablesConfig.vidaJugador,0,100);
+        barraDeVida.fillAmount = VariablesConfig.vidaJugador / 100;
+        Debug.Log("VIDAJUGAOR" + VariablesConfig.vidaJugador / 100 );
 
-        if(vida <= 0.0f){
+        if(VariablesConfig.vidaJugador <= 0.0f){
             animacion.SetBool("activo", true);
             movimiento.gameOver = true;
         }

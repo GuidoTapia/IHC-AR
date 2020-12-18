@@ -10,6 +10,16 @@ TagManager:
   - Puntos
   - CameraContainer
   - WallController
+  - configvars
+  - God
+  - CanvasPlayer
+  - CanvasGod
+  - PCanvas
+  - InitCam
+  - GCamera
+  - PCamera
+  - ayudaP
+  - ayudaG
   layers:
   - Default
   - TransparentFX

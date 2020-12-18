@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
+using Photon.Realtime;
 
 public class Enemigo : MonoBehaviour
 {
@@ -20,19 +22,29 @@ public class Enemigo : MonoBehaviour
     Vector3 initialPosition;
 
     bool flag =true;
+
+    static float sensibilidad;
+
+    PhotonView PV;
+
     // Start is called before the first frame update
     void Start()
     {
+        PV = GetComponent<PhotonView>();
         currentScene = SceneManager.GetActiveScene ();
         sceneName = currentScene.name;
 
         if(sceneName == "Juego"){
             player = GameObject.FindGameObjectWithTag("Player");
-            brazos = GameObject.FindGameObjectWithTag("MainCamera");
+            brazos = GameObject.FindGameObjectWithTag("PCamera");
             initialPosition = transform.position;
 
             playerVida = player.GetComponent<vidaJugador>();
             temp = playerVida.pantallaRoja.color;
+            
+            visionRadius = (int)VariablesConfig.alcance;
+            speed = (int)VariablesConfig.velocidad;
+            cantidad = (int)VariablesConfig.danio * -1;
 
 
         }
@@ -79,22 +91,25 @@ public class Enemigo : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, visionRadius);
     }
      
+
+    void desactivarAnim(){
+        VariablesConfig.ayudaAnimation.SetBool("rojo",false);
+    }  
+    
     void OnCollisionEnter(Collision other) {
         if(other.gameObject  == player ){
-            playerVida.vida += cantidad;
-            temp.a = 0.5f;
-            playerVida.pantallaRoja.color = temp;
-            Debug.Log(playerVida.pantallaRoja.color.a);
+             VariablesConfig.ayudaAnimation.SetBool("rojo",true);
+             Invoke("desactivarAnim", 0.1f);
+             PV.RPC("restarVida", RpcTarget.All);
         }
     }
 
-    void OnCollisionExit(Collision other) {
-         if(other.gameObject  == player){
-            temp.a= 0.0f;
-            playerVida.pantallaRoja.color = temp;
-            Debug.Log(playerVida.pantallaRoja.color.a);
-        }
+
+    [PunRPC]
+    void restarVida(){
+        VariablesConfig.vidaJugador += cantidad;
     }
+
 
 
 }

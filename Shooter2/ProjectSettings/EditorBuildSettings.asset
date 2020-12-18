@@ -9,12 +9,27 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/Menu.unity
     guid: cddf328254f7fda48a068b61673a3983
   - enabled: 1
+    path: Assets/Scenes/Multijugador/lobby.unity
+    guid: 9ddce89c39f18f342ad4fcedf14052a0
+  - enabled: 1
+    path: Assets/Scenes/Menu/GuiaMarcadores.unity
+    guid: 95c49322f1b3e614e8f54c721d33f36e
+  - enabled: 1
+    path: Assets/Scenes/Menu/Configuracion.unity
+    guid: f7d75a21eff5fd348aaad6bd0f6a337f
+  - enabled: 1
     path: Assets/Scenes/Juego.unity
     guid: 82e8a4bfb37007f41a436afead29cfd3
   - enabled: 1
     path: Assets/Scenes/Tutorial/Tutorial/TutorialReal.unity
     guid: 0d929586901d06f4e92cac2a55a0f79a
-  - enabled: 0
-    path: Assets/Scenes/Tutorial/Tuto1.unity
-    guid: ba3c71039aaf6dd488f8a8707c8e8342
+  - enabled: 1
+    path: "Assets/Scenes/Multijugador/Construcci\xF3n.unity"
+    guid: ff1558aebb7e55d4084b3e98b8bb9e3c
+  - enabled: 1
+    path: Assets/Scenes/Multijugador/Tutorial Multi/TutorialMulti.unity
+    guid: ac82020648078bb44a5d254f4a51346b
+  - enabled: 1
+    path: Assets/Scenes/pruebasGod.unity
+    guid: fa2c4f15a13c2dd49833961169bfdb12
   m_configObjects: {}

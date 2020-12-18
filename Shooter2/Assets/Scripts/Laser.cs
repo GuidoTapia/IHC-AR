@@ -48,7 +48,7 @@ public class Laser : MonoBehaviour {
                     lr.SetPosition(1, hit.point);
                     if(hit.transform.gameObject.tag == "Player"){
                         flag = true;
-                        playerVida.vida -=30;
+                        VariablesConfig.vidaJugador -=30;
                         temp.a = 0.5f;
                         playerVida.pantallaRoja.color = temp;
                         //hit.transform.gameObject.transform.position =  new Vector3(0,0,0);

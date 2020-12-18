@@ -44,7 +44,7 @@ public class Logica_Arma : MonoBehaviour
         //audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
 
-        balasEnCartucho = tamañoDeCartcho;
+        VariablesConfig.nBalasJugador = tamañoDeCartcho;
         balasRestantes = maximoDeBalas;
 
         Invoke("HabilitarArmar", 0.5f);
@@ -60,6 +60,9 @@ public class Logica_Arma : MonoBehaviour
         // {
         //     RevisarDisparo();
         // }
+
+        Debug.Log("BALAS RESTANTES" + VariablesConfig.nBalasJugador);
+        textoBalas.text = VariablesConfig.nBalasJugador.ToString();
 
         if (Input.GetButtonDown("Reload"))
         {
@@ -77,7 +80,7 @@ public class Logica_Arma : MonoBehaviour
         if (!puedeDisparar) return;
         if (tiempoNoDisparo) return;
         if (recargando) return;
-        if (balasEnCartucho > 0)
+        if (VariablesConfig.nBalasJugador > 0)
         {
             Disparar();
         }
@@ -94,8 +97,8 @@ public class Logica_Arma : MonoBehaviour
         // fuegoDeArma.Stop();
         // fuegoDeArma.Play();
         ReproducirAnimacionDisparo();
-        balasEnCartucho--;
-        textoBalas.text = balasEnCartucho.ToString();
+        VariablesConfig.nBalasJugador--;
+        textoBalas.text = VariablesConfig.nBalasJugador.ToString();
         StartCoroutine(ReiniciarTiempoNoDisparo());
     }
 
@@ -133,7 +136,7 @@ public class Logica_Arma : MonoBehaviour
 
     public void RevisarRecargar()
     {
-        if (balasRestantes > 0 && balasEnCartucho < tamañoDeCartcho)
+        if (balasRestantes > 0 && VariablesConfig.nBalasJugador < tamañoDeCartcho)
         {
             Recargar();
         }
@@ -149,11 +152,11 @@ public class Logica_Arma : MonoBehaviour
 
     void RecargarMuniciones()
     {
-        int balasParaRecargar = tamañoDeCartcho - balasEnCartucho;
+        int balasParaRecargar = tamañoDeCartcho - VariablesConfig.nBalasJugador;
         int restarBalas = (balasRestantes >= balasParaRecargar) ? balasParaRecargar : balasRestantes;
 
         balasRestantes -= restarBalas;
-        balasEnCartucho += balasParaRecargar;
+        VariablesConfig.nBalasJugador += balasParaRecargar;
     }
 
     public void DesenfundarOn()
